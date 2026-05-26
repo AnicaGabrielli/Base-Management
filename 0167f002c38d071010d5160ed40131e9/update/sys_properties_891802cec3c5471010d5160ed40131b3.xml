@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties">
+    <sys_properties action="INSERT_OR_UPDATE">
+        <choices/>
+        <description>URL for Yahoo Weather API.</description>
+        <ignore_cache>true</ignore_cache>
+        <is_private>false</is_private>
+        <name>x_2060759_base_m_0.base_url</name>
+        <read_roles/>
+        <suffix>base_url</suffix>
+        <sys_class_name>sys_properties</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-25 21:19:43</sys_created_on>
+        <sys_id>891802cec3c5471010d5160ed40131b3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_2060759_base_m_0.base_url</sys_name>
+        <sys_package display_value="Base Management" source="x_2060759_base_m_0">0167f002c38d071010d5160ed40131e9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Base Management">0167f002c38d071010d5160ed40131e9</sys_scope>
+        <sys_update_name>sys_properties_891802cec3c5471010d5160ed40131b3</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-25 21:19:43</sys_updated_on>
+        <type>string</type>
+        <value>https://yahoo-weather5.p.rapidapi.com/weather</value>
+        <write_roles/>
+    </sys_properties>
+    <sys_translated_text action="delete_multiple" query="documentkey=891802cec3c5471010d5160ed40131b3"/>
+</record_update>

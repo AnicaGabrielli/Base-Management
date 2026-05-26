@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_object">
+    <sys_db_object action="DELETE">
+        <access>public</access>
+        <actions_access>false</actions_access>
+        <alter_access>false</alter_access>
+        <caller_access/>
+        <client_scripts_access>false</client_scripts_access>
+        <configuration_access>false</configuration_access>
+        <create_access>false</create_access>
+        <create_access_controls>true</create_access_controls>
+        <delete_access>false</delete_access>
+        <filter_extension/>
+        <is_df_table>false</is_df_table>
+        <is_extendable>false</is_extendable>
+        <label>500</label>
+        <live_feed_enabled>false</live_feed_enabled>
+        <name>x_2060759_base_m_0_500</name>
+        <number_ref/>
+        <provider_class/>
+        <read_access>true</read_access>
+        <scriptable_table>false</scriptable_table>
+        <super_class/>
+        <sys_class_name>sys_db_object</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-25 18:02:04</sys_created_on>
+        <sys_id>3e5b990ac381471010d5160ed40131d3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>500</sys_name>
+        <sys_package display_value="Base Management" source="x_2060759_base_m_0">0167f002c38d071010d5160ed40131e9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Base Management">0167f002c38d071010d5160ed40131e9</sys_scope>
+        <sys_update_name>sys_db_object_3e5b990ac381471010d5160ed40131d3</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-25 18:02:04</sys_updated_on>
+        <update_access>false</update_access>
+        <user_role display_value="x_2060759_base_m_0.registration_user" name="x_2060759_base_m_0.registration_user">d6ead5c6c381471010d5160ed401317f</user_role>
+        <ws_access>true</ws_access>
+    </sys_db_object>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Base Management">0167f002c38d071010d5160ed40131e9</application>
+        <file_path/>
+        <instance_id>c95fc2192b771e543ce2fcd2ce91bf04</instance_id>
+        <instance_name>dev295596</instance_name>
+        <name>sys_db_object_3e5b990ac381471010d5160ed40131d3</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_object"><sys_db_object action="INSERT_OR_UPDATE"><access>public</access><actions_access>false</actions_access><alter_access>false</alter_access><caller_access/><client_scripts_access>false</client_scripts_access><configuration_access>false</configuration_access><create_access>false</create_access><create_access_controls>true</create_access_controls><delete_access>false</delete_access><filter_extension/><is_df_table>false</is_df_table><is_extendable>false</is_extendable><label>500</label><live_feed_enabled>false</live_feed_enabled><name>x_2060759_base_m_0_500</name><number_ref/><provider_class/><read_access>true</read_access><scriptable_table>false</scriptable_table><super_class/><sys_class_name>sys_db_object</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-05-25 18:02:04</sys_created_on><sys_id>3e5b990ac381471010d5160ed40131d3</sys_id><sys_mod_count>0</sys_mod_count><sys_name>500</sys_name><sys_package display_value="Base Management" source="x_2060759_base_m_0">0167f002c38d071010d5160ed40131e9</sys_package><sys_policy/><sys_scope display_value="Base Management">0167f002c38d071010d5160ed40131e9</sys_scope><sys_update_name>sys_db_object_3e5b990ac381471010d5160ed40131d3</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-05-25 18:02:04</sys_updated_on><update_access>false</update_access><user_role display_value="x_2060759_base_m_0.registration_user" name="x_2060759_base_m_0.registration_user">d6ead5c6c381471010d5160ed401317f</user_role><ws_access>true</ws_access></sys_db_object></record_update>]]></payload>
+        <payload_hash>-529937293</payload_hash>
+        <record_name>500</record_name>
+        <reverted_from/>
+        <source>05ceb84ec38d071010d5160ed4013116</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-25 18:02:05</sys_created_on>
+        <sys_id>4b5bd90ac381471010d5160ed4013178</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19e604d16c30000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-25 18:02:05</sys_updated_on>
+        <type>Table</type>
+        <update_guid>475bd90ade814710f3cd39d7a636e477</update_guid>
+        <update_guid_history>475bd90ade814710f3cd39d7a636e477:-529937293</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-25 18:15:03</sys_created_on>
+        <sys_db_object display_value="" name="sys_db_object">sys_db_object</sys_db_object>
+        <sys_id>1b3d62791af345a0891fe85651f180e4</sys_id>
+        <sys_metadata>3e5b990ac381471010d5160ed40131d3</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>500</sys_name>
+        <sys_package display_value="Base Management" source="x_2060759_base_m_0">0167f002c38d071010d5160ed40131e9</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Base Management">0167f002c38d071010d5160ed40131e9</sys_scope>
+        <sys_scope_delete display_value="">4e83db0b1bc04d889b955198d98ee684</sys_scope_delete>
+        <sys_update_name>sys_db_object_3e5b990ac381471010d5160ed40131d3</sys_update_name>
+        <sys_update_version display_value="sys_db_object_3e5b990ac381471010d5160ed40131d3">4b5bd90ac381471010d5160ed4013178</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-25 18:15:03</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
