@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_2060759_base_m_0.RegistrationValidatorUtils</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>RegistrationValidatorUtils</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var RegistrationValidatorUtils = Class.create();
+RegistrationValidatorUtils.prototype = {
+    initialize: function() {},
+
+    checkUserAlredyRegistered: function(user) {
+        if (!user) return false;
+
+        var registration = new GlideRecord("x_2060759_base_m_0_registration");
+        registration.addQuery("opened_by", user);
+        registration.addNotNullQuery("base");
+        registration.addQuery("state", "!=", "rejected"); // ⚠️ veja nota sobre state abaixo
+        registration.setLimit(1);
+        registration.query();
+
+        return registration.hasNext();
+    },
+
+    checkBaseCapacity: function(maxCapacity, occupiedCapacity) {
+        var maxCap = parseInt(maxCapacity, 10) || 0;
+        var occCap = parseInt(occupiedCapacity, 10) || 0;
+
+        // ✅ FIX: operator must be >= (not &gt;=)
+        return occCap >= maxCap;
+    },
+
+    getAvailableBases: function() {
+        var user = gs.getUserID();
+
+        if (this.checkUserAlredyRegistered(user)) {
+            return "sys_idISEMPTY";
+        }
+
+        var available = [];
+        var base = new GlideRecord("x_2060759_base_m_0_bases");
+        base.query();
+
+        while (base.next()) {
+            var maxCap = base.getValue("maximum_capacity");
+            var occCap = base.getValue("occupied_capacity");
+
+            if (!this.checkBaseCapacity(maxCap, occCap)) {
+                available.push(base.getUniqueValue());
+            }
+        }
+
+        return available.length
+            ? ("sys_idIN" + available.join(","))
+            : "sys_idISEMPTY";
+    },
+
+    type: "RegistrationValidatorUtils"
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-27 13:10:08</sys_created_on>
+        <sys_id>64f22aaec3094b1010d5160ed40131ce</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>RegistrationValidatorUtils</sys_name>
+        <sys_package display_value="Base Management" source="x_2060759_base_m_0">0167f002c38d071010d5160ed40131e9</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Base Management">0167f002c38d071010d5160ed40131e9</sys_scope>
+        <sys_update_name>sys_script_include_64f22aaec3094b1010d5160ed40131ce</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-27 13:23:25</sys_updated_on>
+    </sys_script_include>
+</record_update>
