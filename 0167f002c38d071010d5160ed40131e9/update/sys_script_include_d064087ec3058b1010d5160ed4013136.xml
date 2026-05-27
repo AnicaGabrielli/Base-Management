@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_2060759_base_m_0.UserByGroupUtils</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>UserByGroupUtils</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var UserByGroupUtils = Class.create();
+UserByGroupUtils.prototype = {
+
+    getUsersByGroup: function(groupName) {
+        var users = [];
+
+        var gm = new GlideRecord('sys_user_grmember');
+        gm.addQuery('group.name', groupName);
+        gm.addQuery('user.active', true);
+        gm.query();
+
+        while (gm.next()) {
+            users.push(gm.getValue('user'));
+        }
+
+        return 'sys_idIN' + users.join(',');
+    },
+
+    type: 'UserByGroupUtils'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-27 19:38:24</sys_created_on>
+        <sys_id>d064087ec3058b1010d5160ed4013136</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>UserByGroupUtils</sys_name>
+        <sys_package display_value="Base Management" source="x_2060759_base_m_0">0167f002c38d071010d5160ed40131e9</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Base Management">0167f002c38d071010d5160ed40131e9</sys_scope>
+        <sys_update_name>sys_script_include_d064087ec3058b1010d5160ed4013136</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-27 19:38:24</sys_updated_on>
+    </sys_script_include>
+</record_update>

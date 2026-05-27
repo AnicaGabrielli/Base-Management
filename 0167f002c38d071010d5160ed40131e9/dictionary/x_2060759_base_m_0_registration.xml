@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="00ca15c6c381471010d5160ed4013169" extends="task" label="Registration" max_length="40" name="x_2060759_base_m_0_registration" type="collection">
-        <element label="Base" max_length="32" name="base" reference="x_2060759_base_m_0_bases" type="reference"/>
+        <element label="Employee" max_length="32" name="employee" reference="sys_user" reference_qual="javascript: new x_2060759_base_m_0.UserByGroupUtils().getUsersByGroup('Base Managers Users');" type="reference" use_reference_qualifier="advanced"/>
+        <element label="Base" max_length="32" name="base" reference="x_2060759_base_m_0_bases" reference_qual="javascript: new RegistrationValidatorUtils(). getAvailableBases()" type="reference" use_reference_qualifier="advanced"/>
         <element label="Reproval reason" max_length="500" name="reproval_reason" type="string"/>
         <element label="Position" max_length="32" name="position" reference="x_2060759_base_m_0_position" type="reference"/>
     </element>
