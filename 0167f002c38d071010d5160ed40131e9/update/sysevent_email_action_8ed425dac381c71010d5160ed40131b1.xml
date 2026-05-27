@@ -1,0 +1,484 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sysevent_email_action">
+    <sysevent_email_action action="INSERT_OR_UPDATE">
+        <action_insert>false</action_insert>
+        <action_update>false</action_update>
+        <active>true</active>
+        <advanced_condition/>
+        <affected_field_on_event/>
+        <category display_value="Uncategorized" name="Uncategorized">c97d83137f4432005f58108c3ffa917a</category>
+        <collection>x_2060759_base_m_0_bases</collection>
+        <condition/>
+        <content_type>text/html</content_type>
+        <default_interval/>
+        <description/>
+        <digest_from/>
+        <digest_html/>
+        <digest_reply_to/>
+        <digest_separator_html><![CDATA[<p>&nbsp;</p>
+<hr>
+<p>&nbsp;</p>]]></digest_separator_html>
+        <digest_separator_text><![CDATA[\n--------------------------------------------------------------------------------\n]]></digest_separator_text>
+        <digest_subject/>
+        <digest_template/>
+        <digest_text/>
+        <digestable>false</digestable>
+        <enable_dynamic_translation>false</enable_dynamic_translation>
+        <event_name>activate.life.cycle.migration</event_name>
+        <event_parm_1>false</event_parm_1>
+        <event_parm_2>false</event_parm_2>
+        <exclude_delegates>false</exclude_delegates>
+        <force_delivery>false</force_delivery>
+        <from/>
+        <generation_type>triggered</generation_type>
+        <importance/>
+        <include_attachments>false</include_attachments>
+        <item>event.parm1</item>
+        <item_table/>
+        <mandatory>false</mandatory>
+        <message/>
+        <message_html><![CDATA[<p>&nbsp;</p>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    font-family: 'Segoe UI', Arial, sans-serif;
+  }
+  .wrapper {
+    width: 100%;
+    background-color: #f5f5f5;
+    padding: 32px 0;
+  }
+  .container {
+    max-width: 620px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-radius: 4px;
+    overflow: hidden;
+    border: 1px solid #e0e0e0;
+  }
+  .header {
+    background-color: #B71C1C;
+    padding: 28px 36px 24px;
+  }
+  .header-top {
+    display: table;
+    width: 100%;
+  }
+  .header-icon {
+    display: table-cell;
+    vertical-align: middle;
+    width: 48px;
+  }
+  .header-icon-circle {
+    width: 44px;
+    height: 44px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: table;
+    text-align: center;
+  }
+  .header-icon-inner {
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 22px;
+    color: #B71C1C;
+    font-weight: 700;
+    line-height: 1;
+  }
+  .header-text {
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 14px;
+  }
+  .header-label {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: #EF9A9A;
+    text-transform: uppercase;
+    margin: 0 0 4px 0;
+  }
+  .header-title {
+    font-size: 22px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0;
+    line-height: 1.2;
+  }
+  .header-sub {
+    font-size: 13px;
+    color: #FFCDD2;
+    margin: 6px 0 0 0;
+  }
+  .alert-bar {
+    background-color: #C62828;
+    padding: 10px 36px;
+    font-size: 12px;
+    color: #FFCDD2;
+    letter-spacing: 0.5px;
+  }
+  .alert-bar span {
+    font-weight: 700;
+    color: #ffffff;
+  }
+  .content {
+    padding: 28px 36px 24px;
+  }
+  .intro-text {
+    font-size: 14px;
+    color: #424242;
+    line-height: 1.7;
+    margin: 0 0 24px 0;
+  }
+  .section-title {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    color: #9E9E9E;
+    text-transform: uppercase;
+    margin: 0 0 10px 0;
+  }
+  .error-box {
+    background-color: #FFF8F8;
+    border-left: 4px solid #E53935;
+    border-radius: 0 4px 4px 0;
+    padding: 16px 18px;
+    margin-bottom: 24px;
+  }
+  .error-box-label {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #E57373;
+    text-transform: uppercase;
+    margin: 0 0 6px 0;
+  }
+  .error-box-desc {
+    font-size: 13px;
+    color: #424242;
+    line-height: 1.6;
+    margin: 0;
+    font-family: 'Courier New', monospace;
+    word-break: break-all;
+  }
+  .details-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 24px;
+  }
+  .details-table tr {
+    border-bottom: 1px solid #F5F5F5;
+  }
+  .details-table td {
+    padding: 10px 0;
+    font-size: 13px;
+    vertical-align: top;
+  }
+  .details-table .label {
+    color: #9E9E9E;
+    width: 160px;
+    font-weight: 600;
+  }
+  .details-table .value {
+    color: #212121;
+  }
+  .divider {
+    border: none;
+    border-top: 1px solid #F0F0F0;
+    margin: 0 0 24px 0;
+  }
+  .data-grid {
+    display: table;
+    width: 100%;
+    margin-bottom: 24px;
+    border-collapse: separate;
+    border-spacing: 0;
+  }
+  .data-grid-row {
+    display: table-row;
+  }
+  .data-card {
+    display: table-cell;
+    width: 33%;
+    background-color: #FFF8F8;
+    border: 1px solid #FFCDD2;
+    border-radius: 4px;
+    padding: 12px 14px;
+    text-align: center;
+    vertical-align: top;
+  }
+  .data-card-mid {
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+  .data-card-icon {
+    font-size: 18px;
+    margin-bottom: 4px;
+  }
+  .data-card-label {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #E57373;
+    text-transform: uppercase;
+    margin: 0 0 4px 0;
+  }
+  .data-card-value {
+    font-size: 15px;
+    font-weight: 700;
+    color: #B71C1C;
+    margin: 0;
+  }
+  .data-card-sub {
+    font-size: 10px;
+    color: #BDBDBD;
+    margin: 2px 0 0 0;
+  }
+  .state-pill {
+    display: inline-block;
+    background-color: #FFEBEE;
+    color: #C62828;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 3px 12px;
+    border-radius: 20px;
+    letter-spacing: 0.5px;
+    border: 1px solid #FFCDD2;
+  }
+  .incident-box {
+    background-color: #FFF3E0;
+    border: 1px solid #FFB74D;
+    border-radius: 4px;
+    padding: 16px 18px;
+    margin-bottom: 24px;
+    display: table;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .incident-icon-cell {
+    display: table-cell;
+    vertical-align: top;
+    width: 28px;
+    padding-top: 1px;
+  }
+  .incident-icon {
+    width: 22px;
+    height: 22px;
+    background-color: #FF8F00;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 22px;
+    font-size: 13px;
+    color: #ffffff;
+    font-weight: 700;
+  }
+  .incident-content {
+    display: table-cell;
+    vertical-align: top;
+    padding-left: 10px;
+  }
+  .incident-title {
+    font-size: 13px;
+    font-weight: 700;
+    color: #E65100;
+    margin: 0 0 4px 0;
+  }
+  .incident-desc {
+    font-size: 13px;
+    color: #6D4C41;
+    line-height: 1.6;
+    margin: 0;
+  }
+  .incident-number {
+    display: inline-block;
+    background-color: #E65100;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 3px 10px;
+    border-radius: 3px;
+    margin-top: 8px;
+    letter-spacing: 0.5px;
+  }
+  .btn-row {
+    text-align: center;
+    margin-bottom: 24px;
+  }
+  .btn {
+    display: inline-block;
+    background-color: #B71C1C;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 700;
+    padding: 12px 28px;
+    border-radius: 3px;
+    letter-spacing: 0.5px;
+  }
+  .sysid-box {
+    background-color: #FAFAFA;
+    border: 1px solid #EEEEEE;
+    border-radius: 4px;
+    padding: 8px 14px;
+    margin-bottom: 24px;
+  }
+  .sysid-label {
+    font-size: 10px;
+    font-weight: 700;
+    color: #BDBDBD;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0 0 2px 0;
+  }
+  .sysid-value {
+    font-size: 12px;
+    color: #9E9E9E;
+    font-family: 'Courier New', monospace;
+    margin: 0;
+  }
+  .footer {
+    background-color: #F9F9F9;
+    border-top: 1px solid #EEEEEE;
+    padding: 18px 36px;
+    text-align: center;
+  }
+  .footer-text {
+    font-size: 11px;
+    color: #BDBDBD;
+    margin: 0;
+    line-height: 1.7;
+  }
+</style>
+<div class="wrapper">
+<div class="container"><!-- HEADER -->
+<div class="header">
+<div class="header-top">
+<div class="header-icon">
+<div class="header-icon-circle">
+<div class="header-icon-inner">!</div>
+</div>
+</div>
+<div class="header-text">
+<p class="header-label">Yahoo Weather Integration</p>
+<p class="header-title">Integration Failure Detected</p>
+<p class="header-sub">Location: ${name} &mdash; ${city}, ${state}</p>
+</div>
+</div>
+</div>
+<!-- ALERT BAR -->
+<div class="alert-bar">&nbsp;</div>
+<!-- CONTENT -->
+<div class="content">
+<p class="intro-text">Hello,<br><br>The <strong>Yahoo Weather</strong> integration failed. We could not get weather data for the location below. A ticket was opened to fix this.</p>
+<!-- ERROR MESSAGE -->
+<p class="section-title">Why It Failed</p>
+<div class="error-box">
+<p class="error-box-label">Integration Error Message</p>
+<p class="error-box-desc">${integration_error_message}</p>
+</div>
+<hr class="divider"><!-- INTEGRATION STATE + TIMING -->
+<p class="section-title">Integration Status</p>
+<table class="details-table">
+<tbody>
+<tr>
+<td class="label">Integration State</td>
+<td class="value"><span class="state-pill">${integration_state}</span></td>
+</tr>
+<tr>
+<td class="label">Record Created</td>
+<td class="value">${created}</td>
+</tr>
+<tr>
+<td class="label">Last Updated</td>
+<td class="value">${updated}</td>
+</tr>
+<tr>
+<td class="label">Updated by</td>
+<td class="value">${updated_by}</td>
+</tr>
+</tbody>
+</table>
+<hr class="divider"><!-- LOCATION + DATA CARDS -->
+<p class="section-title">Location Data (Last Known)</p>
+<table class="data-grid">
+<tbody>
+<tr class="data-grid-row">
+<td class="data-card">
+<p class="data-card-label">Latitude</p>
+<p class="data-card-value">${latitude}</p>
+<p class="data-card-sub">degrees</p>
+</td>
+<td class="data-card data-card-mid">
+<p class="data-card-label">Longitude</p>
+<p class="data-card-value">${longitude}</p>
+<p class="data-card-sub">degrees</p>
+</td>
+<td class="data-card">
+<p class="data-card-label">Temperature</p>
+<p class="data-card-value">${temperature}</p>
+<p class="data-card-sub">last sync</p>
+</td>
+</tr>
+</tbody>
+</table>
+<hr class="divider"><!-- INCIDENT -->
+<div class="incident-box">
+<div class="incident-icon-cell">
+<div class="incident-icon">i</div>
+</div>
+<div class="incident-content">
+<p class="incident-title">An Incident Was Created</p>
+<p class="incident-desc">We opened a ticket in ServiceNow. The team knows about this problem and is working to fix it.</p>
+</div>
+</div>
+<!-- SYS ID -->
+<div class="sysid-box">
+<p class="sysid-label">Record Sys ID</p>
+<p class="sysid-value">${sys_id}</p>
+</div>
+<!-- BUTTON -->
+<p class="intro-text" style="font-size: 13px; color: #757575; margin: 0;">Do you have questions? Please use ServiceNow to talk to the team.</p>
+</div>
+<!-- FOOTER -->
+<div class="footer">
+<p class="footer-text">This email was sent by the system. Please do not reply here.<br>Use ServiceNow to talk to the team.<br><br>&copy;IT Team</p>
+</div>
+</div>
+</div>]]></message_html>
+        <message_list/>
+        <message_text/>
+        <name>Integration Failure Detected</name>
+        <omit_watermark>false</omit_watermark>
+        <order>100</order>
+        <push_message_only>false</push_message_only>
+        <recipient_fields>sys_created_by</recipient_fields>
+        <recipient_groups/>
+        <recipient_users/>
+        <reply_to/>
+        <send_self>true</send_self>
+        <sms_alternate/>
+        <style/>
+        <subject/>
+        <subscribable>false</subscribable>
+        <sys_class_name>sysevent_email_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-26 13:37:21</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>8ed425dac381c71010d5160ed40131b1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Integration Failure Detected</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Base Management" source="x_2060759_base_m_0">0167f002c38d071010d5160ed40131e9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Base Management">0167f002c38d071010d5160ed40131e9</sys_scope>
+        <sys_update_name>sysevent_email_action_8ed425dac381c71010d5160ed40131b1</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-26 13:37:21</sys_updated_on>
+        <sys_version>2</sys_version>
+        <template display_value="Unsubscribe and Preferences">7ed0481f3b0b2200c869c2c703efc487</template>
+        <type>email</type>
+        <weight>0</weight>
+    </sysevent_email_action>
+</record_update>

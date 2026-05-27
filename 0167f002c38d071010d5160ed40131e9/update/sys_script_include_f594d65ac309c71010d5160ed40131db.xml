@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_2060759_base_m_0.BaseValidatorUtils</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>BaseValidatorUtils</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var BaseValidatorUtils = Class.create();
+BaseValidatorUtils.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+
+    checkDuplicateName: function() {
+        var name = this.getParameter("sysparm_base_name");
+        if (!name) {
+            return "";
+        }
+
+        var normalizedInput = name.trim().toLowerCase();
+
+        var base = new GlideRecord('x_2060759_base_m_0_bases');
+        base.query();
+
+        while (base.next()) {
+            var existingName = base.getValue("name");
+            if (existingName && existingName.trim().toLowerCase() === normalizedInput) {
+                return "true";
+            }
+        }
+        return "false";
+    },
+
+    checkDuplicateCityState: function() {
+        var city = this.getParameter("sysparm_city");
+        var state = this.getParameter("sysparm_state");
+
+        if (!city || !state) {
+            return "";
+        }
+
+        var normalizedCity = city.trim().toLowerCase();
+        var normalizedState = state.trim().toLowerCase();
+
+        var base = new GlideRecord("x_2060759_base_m_0_bases");
+        base.query();
+
+        while (base.next()) {
+            var existingCity = base.getValue("city");
+            var existingState = base.getValue("state");
+
+            if (!existingCity || !existingState) continue;
+
+            if (
+                existingCity.trim().toLowerCase() === normalizedCity &&
+                existingState.trim().toLowerCase() === normalizedState
+            ) {
+                return "true";
+            }
+        }
+        return "false";
+    },
+
+    checkDuplicateManager: function() {
+        var manager = this.getParameter("sysparm_manager");
+
+        if (!manager) {
+            return "";
+        }
+
+        var base = new GlideRecord("x_2060759_base_m_0_bases");
+        base.addQuery("manager", manager);
+        base.query();
+
+        if (base.hasNext()) {
+            return "true";
+        }
+        return "false";
+    },
+	
+    type: 'BaseValidatorUtils'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-26 17:44:56</sys_created_on>
+        <sys_id>f594d65ac309c71010d5160ed40131db</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>BaseValidatorUtils</sys_name>
+        <sys_package display_value="Base Management" source="x_2060759_base_m_0">0167f002c38d071010d5160ed40131e9</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Base Management">0167f002c38d071010d5160ed40131e9</sys_scope>
+        <sys_update_name>sys_script_include_f594d65ac309c71010d5160ed40131db</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-26 18:56:21</sys_updated_on>
+    </sys_script_include>
+</record_update>
