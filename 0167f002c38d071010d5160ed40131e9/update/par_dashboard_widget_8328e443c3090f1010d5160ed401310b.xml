@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_dashboard_widget">
+    <par_dashboard_widget action="INSERT_OR_UPDATE">
+        <canvas display_value="">f70a6447c3090f1010d5160ed401314c</canvas>
+        <component display_value="Donut">a2b0596cec6b9d49dd1ff9bf76b5084b</component>
+        <component_props>{"filterConfigurations":[],"selectedElements":[],"showDataLabels":true,"dataLabelsType":"both","truncationType":"end","showRegister":true,"registerPosition":"bottom","registerOrientation":"horizontal","showRegisterOnSameLine":false,"showRegisterValue":true,"legendHorizontalAlignment":"center","legendExpandToFit":false,"showRegisterPercentage":true,"newReporting":false,"enableAddZerosAtApi":true,"additionalGroupByConfig":[],"showHeader":true,"showTotalAggregate":false,"showSubAggregate":false,"showFirstGroupAggregate":false,"showSecondGroupAggregate":false,"hideMatrixAggregate":false,"wrapTitle":false,"showLoadingIndicator":false,"showHeaderSeparator":true,"contextMenuActions":[],"headingLevel":2,"showBorder":true,"bareBorder":false,"telemetry":null,"showDataPassthrough":false,"showAdditionalGroupBySelector":false,"allowAdditionalGroupByPerMetric":false,"sortByOrder":"desc","showChange":false,"showChangePercentage":false,"showTarget":false,"showForecast":false,"showForecastRange":false,"showTrend":false,"showConfidenceBand":false,"showGapPercentage":false,"showSparkline":false,"showMetricLabel":false,"showThreshold":false,"showComment":false,"followFilters":true,"showFilterIcon":true,"enableRealTimeUpdate":false,"enableDrilldown":true,"enableClickAndStay":false,"showDataTable":false,"enableCustomEmptyState":false,"emptyStateIllustration":"no-data","emptyStateHeading":"No data available.","emptyStateHeadingLevel":3,"emptyStateContent":"There are no scores available for the selected criteria. Contact your admin for more info.","emptyStateAlignment":"vertical-centered","hideDevSettings":false,"configPropModifiers":{},"showMaximumRange":false,"allowChangeDateRange":false,"showDateRangeByDefault":false,"applyDateRange":false,"numberOfPeriods":3,"showAbsolutePeriod":false,"scoreType":null,"showChangeFrom":"previous","useCurrentDateForEnd":false,"period":"M","useDataCache":false,"cacheExpirationTime":0,"showCacheTime":true,"dateFormat":"default","showRefresh":true,"showFilterAsSeparateSeries":false,"componentId":"iz41jwoa","filterPerMetric":[],"sortBy":"value","configVersion":"23.0.0-ci-SNAPSHOT","showTotalValue":false,"colorConfig":{"type":"default"},"dataSources":[{"isDatabaseView":false,"allowRealTime":true,"label":"Registration","sourceType":"table","tableOrViewName":"x_2060759_base_m_0_registration","filterQuery":"state=3","preferredVisualizations":["d24d53f60350de7a652caf3188a46ed2"],"id":"dGFibGV4XzIwNjA3NTlfYmFzZV9tXzBfcmVnaXN0cmF0aW9uMTc3OTk4NTMxOTMzMQ==","dataCategories":["trend","group","simple"]}],"groupBy":[{"groupBy":[{"dataSource":"dGFibGV4XzIwNjA3NTlfYmFzZV9tXzBfcmVnaXN0cmF0aW9uMTc3OTk4NTMxOTMzMQ==","groupByField":"position","isRange":false,"isChoice":false,"isPaBucket":false}],"maxNumberOfGroups":"ALL","numberOfGroupsBasedOn":"NO_OF_GROUP_BASED_ON_PER_METRIC","showOthers":false,"disableRanges":false}],"metrics":[{"dataSource":"dGFibGV4XzIwNjA3NTlfYmFzZV9tXzBfcmVnaXN0cmF0aW9uMTc3OTk4NTMxOTMzMQ==","id":"ZEdGaWJHVjRYekl3TmpBM05UbGZZbUZ6WlY5dFh6QmZjbVZuYVhOMGNtRjBhVzl1TVRjM09UazROVE14T1RNek1RPT0xNzc5OTg1MzIxNDQx","aggregateFunction":"COUNT","numberFormat":{"customFormat":false},"axisId":"primary"}],"headerTitle":"People grouped by position"}</component_props>
+        <h>21</h>
+        <name>People grouped by position</name>
+        <stored_component display_value="People grouped by position">bca16883c3c50f1010d5160ed40131e5</stored_component>
+        <sys_class_name>par_dashboard_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-28 16:52:21</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>8328e443c3090f1010d5160ed401310b</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>People grouped by position</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Base Management" source="x_2060759_base_m_0">0167f002c38d071010d5160ed40131e9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Base Management">0167f002c38d071010d5160ed40131e9</sys_scope>
+        <sys_update_name>par_dashboard_widget_8328e443c3090f1010d5160ed401310b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-28 17:29:47</sys_updated_on>
+        <visualization/>
+        <w>48</w>
+        <widget_props/>
+        <x>0</x>
+        <y>22</y>
+    </par_dashboard_widget>
+</record_update>

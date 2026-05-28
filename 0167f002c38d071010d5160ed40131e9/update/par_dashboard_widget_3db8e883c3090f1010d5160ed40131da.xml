@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_dashboard_widget">
+    <par_dashboard_widget action="INSERT_OR_UPDATE">
+        <canvas display_value="">4707248fc3c50f1010d5160ed40131b5</canvas>
+        <component display_value="Line">18ac962264404bcc0039359d184b15f3</component>
+        <component_props>{"filterConfigurations":[],"showDataLabels":true,"disableTooltip":false,"showClosestSeriesOnHover":false,"showXGrid":false,"showDateRangeByDefault":false,"showYGrid":true,"hideYAxis0":false,"yAxis0Position":"left","hideYAxis1":false,"yAxis1Position":"right","hideYAxis2":false,"yAxis2Position":"right","hideYAxis3":false,"yAxis3Position":"right","hideYAxis4":false,"yAxis4Position":"right","showLegend":true,"showLegendValue":false,"legendPosition":"bottom","legendHorizontalAlignment":"center","legendExpandToFit":false,"yAxisStyle":"default","lineStrokeWidth":"2","chartVariation":"stacked","extensionType":"line","showContinuousLine":true,"showMarkers":false,"newReporting":false,"enableAddZerosAtApi":true,"additionalGroupByConfig":[],"showHeader":true,"showTotalAggregate":false,"showSubAggregate":false,"showFirstGroupAggregate":false,"showSecondGroupAggregate":false,"hideMatrixAggregate":false,"wrapTitle":false,"showLoadingIndicator":false,"showHeaderSeparator":true,"contextMenuActions":[],"headingLevel":2,"showBorder":true,"bareBorder":false,"telemetry":null,"showDataPassthrough":false,"showAdditionalGroupBySelector":false,"allowAdditionalGroupByPerMetric":true,"sortByOrder":"","showChange":null,"showChangePercentage":null,"showTarget":false,"showForecast":false,"showForecastRange":false,"showTrend":false,"showConfidenceBand":false,"showGapPercentage":null,"showSparkline":null,"showMetricLabel":null,"showThreshold":false,"showComment":false,"followFilters":true,"showFilterIcon":true,"enableRealTimeUpdate":null,"enableDrilldown":true,"enableClickAndStay":false,"showDataTable":false,"enableCustomEmptyState":false,"emptyStateIllustration":"no-data","emptyStateHeading":"No data available.","emptyStateHeadingLevel":3,"emptyStateContent":"There are no scores available for the selected criteria. Contact your admin for more info.","emptyStateAlignment":"vertical-centered","hideDevSettings":false,"configPropModifiers":{},"showMaximumRange":false,"allowChangeDateRange":false,"applyDateRange":false,"numberOfPeriods":3,"showAbsolutePeriod":false,"scoreType":"latest","showChangeFrom":null,"useCurrentDateForEnd":false,"period":null,"useDataCache":false,"cacheExpirationTime":0,"showCacheTime":true,"dateFormat":"default","showRefresh":true,"showFilterAsSeparateSeries":false,"description":"","componentId":"jnqe0m69","filterPerMetric":[],"sortBy":"","configVersion":"23.0.0-ci-SNAPSHOT","colorConfig":{"type":"default"},"dataSources":[{"isDatabaseView":false,"allowRealTime":true,"label":"Registration","sourceType":"table","tableOrViewName":"x_2060759_base_m_0_registration","filterQuery":"","preferredVisualizations":["d24d53f60350de7a652caf3188a46ed2"],"id":"dGFibGV4XzIwNjA3NTlfYmFzZV9tXzBfcmVnaXN0cmF0aW9uMTc3OTk4NjMwNTA1Ng==","dataCategories":["trend","group","simple"]}],"trendBy":{"trendByFrequency":"date","trendByMinuteInterval":null,"trendByFields":[{"field":"opened_at","metric":"ZEdGaWJHVjRYekl3TmpBM05UbGZZbUZ6WlY5dFh6QmZjbVZuYVhOMGNtRjBhVzl1TVRjM09UazROak13TlRBMU5nPT0xNzc5OTg2MzA3NDg3"}]},"metrics":[{"dataSource":"dGFibGV4XzIwNjA3NTlfYmFzZV9tXzBfcmVnaXN0cmF0aW9uMTc3OTk4NjMwNTA1Ng==","id":"ZEdGaWJHVjRYekl3TmpBM05UbGZZbUZ6WlY5dFh6QmZjbVZuYVhOMGNtRjBhVzl1TVRjM09UazROak13TlRBMU5nPT0xNzc5OTg2MzA3NDg3","aggregateFunction":"COUNT","numberFormat":{"customFormat":false},"axisId":"primary"}],"groupBy":null,"headerTitle":"Timeline of new subscribers per day"}</component_props>
+        <h>14</h>
+        <name>Timeline of new subscribers per day</name>
+        <stored_component display_value="Timeline of new subscribers per day">bbc6e84fc3c50f1010d5160ed40131d8</stored_component>
+        <sys_class_name>par_dashboard_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-28 16:54:44</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>3db8e883c3090f1010d5160ed40131da</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Timeline of new subscribers per day</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Base Management" source="x_2060759_base_m_0">0167f002c38d071010d5160ed40131e9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Base Management">0167f002c38d071010d5160ed40131e9</sys_scope>
+        <sys_update_name>par_dashboard_widget_3db8e883c3090f1010d5160ed40131da</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-28 17:29:47</sys_updated_on>
+        <visualization/>
+        <w>23</w>
+        <widget_props/>
+        <x>0</x>
+        <y>20</y>
+    </par_dashboard_widget>
+</record_update>

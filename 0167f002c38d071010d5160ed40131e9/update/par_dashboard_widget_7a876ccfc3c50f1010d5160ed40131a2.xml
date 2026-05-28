@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_dashboard_widget">
+    <par_dashboard_widget action="INSERT_OR_UPDATE">
+        <canvas display_value="">4707248fc3c50f1010d5160ed40131b5</canvas>
+        <component display_value="List - Simple">2b1c080881e05dc63b917044290b233f</component>
+        <component_props>{"table":"x_2060759_base_m_0_registration","columnPreferenceKey":"","fixedQuery":"state=8","followFilters":true,"listTitle":"List of participants pending approval in the database.","columns":"number,base,state,position,employee","maxColumns":5,"query":"active=true","groupByField":"","hideViewAll":false,"hideHighlightedValues":false,"showBorder":true,"bare":false,"highlightedValueConfigId":"","hideHighlightContent":false,"highlightContent":{"patterns":[],"color":""},"hideLinks":false,"nrlLandmark":true,"wordWrap":false,"overrideWordWrapUserPref":false,"maxCharLimit":4000,"hideEmptyStateImage":false,"hidePersonalization":false,"hideDotwalk":false,"hideColumnReorder":false,"hideRowSelector":false,"hideColumnGrouping":false,"hideColumnResizing":false,"hideColumnFiltering":false,"hideColumnSorting":false,"hideHeader":false,"hideTitle":false,"hideTitleRowCount":false,"hideLastRefreshedText":false,"hideRefreshButton":false,"hideInlineEditing":false,"isDashboard":true}</component_props>
+        <h>20</h>
+        <name>List of participants pending approval in the base.</name>
+        <stored_component display_value="List of participants pending approval in the base.">86bd804fc3050f1010d5160ed40131fd</stored_component>
+        <sys_class_name>par_dashboard_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-28 16:49:37</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>7a876ccfc3c50f1010d5160ed40131a2</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>List of participants pending approval in the base.</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Base Management" source="x_2060759_base_m_0">0167f002c38d071010d5160ed40131e9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Base Management">0167f002c38d071010d5160ed40131e9</sys_scope>
+        <sys_update_name>par_dashboard_widget_7a876ccfc3c50f1010d5160ed40131a2</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-28 17:29:47</sys_updated_on>
+        <visualization/>
+        <w>48</w>
+        <widget_props/>
+        <x>0</x>
+        <y>0</y>
+    </par_dashboard_widget>
+</record_update>

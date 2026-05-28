@@ -24,14 +24,14 @@
         <outputs/>
         <outputs/>
         <pre_compiled>false</pre_compiled>
-        <state>published</state>
+        <state>draft</state>
         <sys_class_name>sys_hub_action_type_definition</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-05-27 22:50:27</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>3680bc72c3898b1010d5160ed40131e7</sys_id>
-        <sys_mod_count>24</sys_mod_count>
+        <sys_mod_count>26</sys_mod_count>
         <sys_name>Check Role</sys_name>
         <sys_overrides/>
         <sys_package display_value="Base Management" source="x_2060759_base_m_0">0167f002c38d071010d5160ed40131e9</sys_package>
@@ -39,7 +39,7 @@
         <sys_scope display_value="Base Management">0167f002c38d071010d5160ed40131e9</sys_scope>
         <sys_update_name>sys_hub_action_type_definition_3680bc72c3898b1010d5160ed40131e7</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-05-27 23:31:57</sys_updated_on>
+        <sys_updated_on>2026-05-28 12:29:55</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_definition>
@@ -141,10 +141,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-05-27 22:54:31</sys_created_on>
         <sys_id>5271b076c3898b1010d5160ed4013166</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_scope display_value="Base Management">0167f002c38d071010d5160ed40131e9</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-05-27 23:28:59</sys_updated_on>
+        <sys_updated_on>2026-05-28 12:29:55</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=5271b076c3898b1010d5160ed4013166"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -169,12 +169,41 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-05-27 22:54:31</sys_created_on>
         <sys_id>5671b076c3898b1010d5160ed401317c</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-05-27 23:28:59</sys_updated_on>
+        <sys_updated_on>2026-05-28 12:29:55</sys_updated_on>
         <value>(function execute(inputs, outputs) {&#13;
 &#13;
-    outputs.has_role = gs.hasRole(inputs.role_name, inputs.user_sys_id) ? true : false;&#13;
+    // 1. Busca a role&#13;
+    var role = new GlideRecord('sys_user_role');&#13;
+    role.addQuery('name', inputs.role_name);&#13;
+    role.query();&#13;
+    if (!role.next()) {&#13;
+        outputs.has_role = false;&#13;
+        return;&#13;
+    }&#13;
+    var roleSysId = role.getValue('sys_id');&#13;
+&#13;
+    // 2. Busca grupos com essa role&#13;
+    var groupRole = new GlideRecord('sys_group_has_role');&#13;
+    groupRole.addQuery('role', roleSysId);&#13;
+    groupRole.query();&#13;
+    var groupIds = [];&#13;
+    while (groupRole.next()) {&#13;
+        groupIds.push(groupRole.getValue('group'));&#13;
+    }&#13;
+    if (groupIds.length === 0) {&#13;
+        outputs.has_role = false;&#13;
+        return;&#13;
+    }&#13;
+&#13;
+    // 3. Verifica se o usuário está em algum desses grupos&#13;
+    var gm = new GlideRecord('sys_user_grmember');&#13;
+    gm.addQuery('user', inputs.user_sys_id);&#13;
+    gm.addQuery('group', 'IN', groupIds.join(','));&#13;
+    gm.query();&#13;
+&#13;
+    outputs.has_role = gm.hasNext() ? true : false;&#13;
 &#13;
 })(inputs, outputs);</value>
         <variable display_value="Script">71aa7f6647032200b4fad7527c9a719b</variable>
@@ -526,14 +555,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-05-27 22:51:09</sys_created_on>
         <sys_id>4db0b8f2c3898b1010d5160ed40131a9</sys_id>
-        <sys_mod_count>31</sys_mod_count>
+        <sys_mod_count>33</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Base Management">0167f002c38d071010d5160ed40131e9</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-05-27 23:31:56</sys_updated_on>
+        <sys_updated_on>2026-05-28 12:29:55</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
