@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_dashboard_permission">
+    <par_dashboard_permission action="DELETE">
+        <can_read>true</can_read>
+        <can_share>false</can_share>
+        <can_write>false</can_write>
+        <dashboard display_value="Base Management Analytics">4b07ec4fc3c50f1010d5160ed4013176</dashboard>
+        <group display_value="Base Management Available Managers" name="Base Management Available Managers">ab84748ac34d071010d5160ed40131d9</group>
+        <owner>false</owner>
+        <role/>
+        <sys_class_name>par_dashboard_permission</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-29 11:38:52</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>600a64d3c3c58f1010d5160ed40131a4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>4b07ec4fc3c50f1010d5160ed4013176</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Base Management" source="x_2060759_base_m_0">0167f002c38d071010d5160ed40131e9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Base Management">0167f002c38d071010d5160ed40131e9</sys_scope>
+        <sys_update_name>par_dashboard_permission_600a64d3c3c58f1010d5160ed40131a4</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-29 11:38:52</sys_updated_on>
+        <user/>
+    </par_dashboard_permission>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Base Management">0167f002c38d071010d5160ed40131e9</application>
+        <file_path/>
+        <instance_id>c95fc2192b771e543ce2fcd2ce91bf04</instance_id>
+        <instance_name>dev295596</instance_name>
+        <name>par_dashboard_permission_600a64d3c3c58f1010d5160ed40131a4</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_dashboard_permission"><par_dashboard_permission action="INSERT_OR_UPDATE"><can_read>true</can_read><can_share>false</can_share><can_write>false</can_write><dashboard display_value="Base Management Analytics">4b07ec4fc3c50f1010d5160ed4013176</dashboard><group display_value="Base Management Available Managers" name="Base Management Available Managers">ab84748ac34d071010d5160ed40131d9</group><owner>false</owner><role/><sys_class_name>par_dashboard_permission</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-05-29 11:38:52</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>600a64d3c3c58f1010d5160ed40131a4</sys_id><sys_mod_count>0</sys_mod_count><sys_name>4b07ec4fc3c50f1010d5160ed4013176</sys_name><sys_overrides/><sys_package display_value="Base Management" source="x_2060759_base_m_0">0167f002c38d071010d5160ed40131e9</sys_package><sys_policy/><sys_scope display_value="Base Management">0167f002c38d071010d5160ed40131e9</sys_scope><sys_update_name>par_dashboard_permission_600a64d3c3c58f1010d5160ed40131a4</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-05-29 11:38:52</sys_updated_on><user/></par_dashboard_permission></record_update>]]></payload>
+        <payload_hash>470743287</payload_hash>
+        <record_name>4b07ec4fc3c50f1010d5160ed4013176</record_name>
+        <reverted_from/>
+        <source>05ceb84ec38d071010d5160ed4013116</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-29 11:38:52</sys_created_on>
+        <sys_id>640a64d3c3c58f1010d5160ed40131ab</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19e7387aef20000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-29 11:38:52</sys_updated_on>
+        <type>PAR Dashboard Permission</type>
+        <update_guid>200a64d36bc58f10d914935f04a208aa</update_guid>
+        <update_guid_history>200a64d36bc58f10d914935f04a208aa:470743287</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Base Management Analytics">e5ab20d7c3c58f1010d5160ed401317d</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-29 11:46:02</sys_created_on>
+        <sys_db_object display_value="" name="par_dashboard_permission">par_dashboard_permission</sys_db_object>
+        <sys_id>0d1937f4da6d46d08e3a1251430a6100</sys_id>
+        <sys_metadata>600a64d3c3c58f1010d5160ed40131a4</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>4b07ec4fc3c50f1010d5160ed4013176</sys_name>
+        <sys_package display_value="Base Management" source="x_2060759_base_m_0">0167f002c38d071010d5160ed40131e9</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Base Management">0167f002c38d071010d5160ed40131e9</sys_scope>
+        <sys_scope_delete display_value="">4e83db0b1bc04d889b955198d98ee684</sys_scope_delete>
+        <sys_update_name>par_dashboard_permission_600a64d3c3c58f1010d5160ed40131a4</sys_update_name>
+        <sys_update_version display_value="par_dashboard_permission_600a64d3c3c58f1010d5160ed40131a4">640a64d3c3c58f1010d5160ed40131ab</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-29 11:46:02</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
