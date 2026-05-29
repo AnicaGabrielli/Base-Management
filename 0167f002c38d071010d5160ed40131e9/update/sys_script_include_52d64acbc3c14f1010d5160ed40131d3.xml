@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_2060759_base_m_0.BaseValidatorUtils_v2</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>BaseValidatorUtils_v2</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var BaseValidatorUtils_v2 = Class.create();
+BaseValidatorUtils_v2.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+
+    checkDuplicateName: function() {
+        var name = this.getParameter("sysparm_base_name");
+        if (!name) return "";
+
+        var base = new GlideRecordSecure('x_2060759_base_m_0_bases');
+        base.addQuery('name', name.trim());
+        base.query();
+
+        return base.hasNext() ? "true" : "false";
+    },
+
+    checkDuplicateCityState: function() {
+        var city = this.getParameter("sysparm_city");
+        var state = this.getParameter("sysparm_state");
+        if (!city || !state) return "";
+
+        var base = new GlideRecordSecure("x_2060759_base_m_0_bases");
+        base.addQuery("city", city.trim());
+        base.addQuery("state", state.trim());
+        base.query();
+
+        return base.hasNext() ? "true" : "false";
+    },
+
+    checkDuplicateManager: function() {
+        var manager = this.getParameter("sysparm_manager");
+        if (!manager) return "";
+
+        var base = new GlideRecordSecure("x_2060759_base_m_0_bases");
+        base.addQuery("manager", manager);
+        base.query();
+
+        return base.hasNext() ? "true" : "false";
+    },
+
+    type: 'BaseValidatorUtils_v2'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-28 23:47:17</sys_created_on>
+        <sys_id>52d64acbc3c14f1010d5160ed40131d3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>BaseValidatorUtils_v2</sys_name>
+        <sys_package display_value="Base Management" source="x_2060759_base_m_0">0167f002c38d071010d5160ed40131e9</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Base Management">0167f002c38d071010d5160ed40131e9</sys_scope>
+        <sys_update_name>sys_script_include_52d64acbc3c14f1010d5160ed40131d3</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-28 23:47:17</sys_updated_on>
+    </sys_script_include>
+</record_update>
