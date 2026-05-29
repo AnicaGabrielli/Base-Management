@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_list_control">
+    <sys_ui_list_control action="DELETE">
+        <columns_condition/>
+        <disable_nlq>false</disable_nlq>
+        <edit_condition/>
+        <edit_default_filter/>
+        <edit_roles/>
+        <empty_condition/>
+        <filter_condition/>
+        <filter_roles/>
+        <hierarchical_lists>false</hierarchical_lists>
+        <label/>
+        <link_condition/>
+        <link_roles/>
+        <list_edit_insert_row>false</list_edit_insert_row>
+        <list_edit_ref_qual_tag/>
+        <list_edit_type/>
+        <name>x_2060759_base_m_0_bases</name>
+        <new_condition><![CDATA[
+var maximum_capacity = parent.getValue('maximum_capacity'); 
+var occupied_capacity = parent.getValue('occupied_capacity'); 
+
+if (occupied_capacity < maximum_capacity) {
+    answer = false; 
+} else {
+    answer = true; 
+}]]></new_condition>
+        <new_roles/>
+        <omit_columns_if_empty>false</omit_columns_if_empty>
+        <omit_count>false</omit_count>
+        <omit_count_views>false</omit_count_views>
+        <omit_count_views_list/>
+        <omit_drilldown_link>false</omit_drilldown_link>
+        <omit_edit_button>true</omit_edit_button>
+        <omit_filters>false</omit_filters>
+        <omit_if_empty>false</omit_if_empty>
+        <omit_links>false</omit_links>
+        <omit_new_button>false</omit_new_button>
+        <omit_related_list_count>false</omit_related_list_count>
+        <related_list>x_2060759_base_m_0_registration.base</related_list>
+        <sys_class_name>sys_ui_list_control</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-28 14:41:04</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>7595044bc3c10f1010d5160ed40131d9</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>x_2060759_base_m_0_bases</sys_name>
+        <sys_overrides display_value="">global</sys_overrides>
+        <sys_package display_value="Base Management" source="x_2060759_base_m_0">0167f002c38d071010d5160ed40131e9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Base Management">0167f002c38d071010d5160ed40131e9</sys_scope>
+        <sys_update_name>sys_ui_list_control_7595044bc3c10f1010d5160ed40131d9</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-29 14:38:38</sys_updated_on>
+    </sys_ui_list_control>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Base Management">0167f002c38d071010d5160ed40131e9</application>
+        <file_path/>
+        <instance_id>c95fc2192b771e543ce2fcd2ce91bf04</instance_id>
+        <instance_name>dev295596</instance_name>
+        <name>sys_ui_list_control_7595044bc3c10f1010d5160ed40131d9</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_ui_list_control"&gt;&lt;sys_ui_list_control action="INSERT_OR_UPDATE"&gt;&lt;columns_condition/&gt;&lt;disable_nlq&gt;false&lt;/disable_nlq&gt;&lt;edit_condition/&gt;&lt;edit_default_filter/&gt;&lt;edit_roles/&gt;&lt;empty_condition/&gt;&lt;filter_condition/&gt;&lt;filter_roles/&gt;&lt;hierarchical_lists&gt;false&lt;/hierarchical_lists&gt;&lt;label/&gt;&lt;link_condition/&gt;&lt;link_roles/&gt;&lt;list_edit_insert_row&gt;false&lt;/list_edit_insert_row&gt;&lt;list_edit_ref_qual_tag/&gt;&lt;list_edit_type/&gt;&lt;name&gt;x_2060759_base_m_0_bases&lt;/name&gt;&lt;new_condition&gt;&lt;![CDATA[
+var maximum_capacity = parent.getValue('maximum_capacity'); 
+var occupied_capacity = parent.getValue('occupied_capacity'); 
+
+if (occupied_capacity &lt; maximum_capacity) {
+    answer = false; 
+} else {
+    answer = true; 
+}]]&gt;&lt;/new_condition&gt;&lt;new_roles/&gt;&lt;omit_columns_if_empty&gt;false&lt;/omit_columns_if_empty&gt;&lt;omit_count&gt;false&lt;/omit_count&gt;&lt;omit_count_views&gt;false&lt;/omit_count_views&gt;&lt;omit_count_views_list/&gt;&lt;omit_drilldown_link&gt;false&lt;/omit_drilldown_link&gt;&lt;omit_edit_button&gt;true&lt;/omit_edit_button&gt;&lt;omit_filters&gt;false&lt;/omit_filters&gt;&lt;omit_if_empty&gt;false&lt;/omit_if_empty&gt;&lt;omit_links&gt;false&lt;/omit_links&gt;&lt;omit_new_button&gt;false&lt;/omit_new_button&gt;&lt;omit_related_list_count&gt;false&lt;/omit_related_list_count&gt;&lt;related_list&gt;x_2060759_base_m_0_registration.base&lt;/related_list&gt;&lt;sys_class_name&gt;sys_ui_list_control&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-05-28 14:41:04&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;7595044bc3c10f1010d5160ed40131d9&lt;/sys_id&gt;&lt;sys_mod_count&gt;6&lt;/sys_mod_count&gt;&lt;sys_name&gt;x_2060759_base_m_0_bases&lt;/sys_name&gt;&lt;sys_overrides display_value=""&gt;global&lt;/sys_overrides&gt;&lt;sys_package display_value="Base Management" source="x_2060759_base_m_0"&gt;0167f002c38d071010d5160ed40131e9&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Base Management"&gt;0167f002c38d071010d5160ed40131e9&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_list_control_7595044bc3c10f1010d5160ed40131d9&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-05-29 14:38:38&lt;/sys_updated_on&gt;&lt;/sys_ui_list_control&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-445086087</payload_hash>
+        <record_name>x_2060759_base_m_0_bases</record_name>
+        <reverted_from/>
+        <source>05ceb84ec38d071010d5160ed4013116</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-29 14:38:38</sys_created_on>
+        <sys_id>3d23951bc30d8f1010d5160ed40131c2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19e742c426f0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-29 14:38:38</sys_updated_on>
+        <type>List Control</type>
+        <update_guid>b923951b4b0d8f1025db0ced669f13c1</update_guid>
+        <update_guid_history>b923951b4b0d8f1025db0ced669f13c1:-445086087,8903511b690d8f10c55e23e48406776a:631672255,ebd21dd72a0d8f102c2933f2d41d3523:-445086087,e09251d74a0d8f102a2d07194c8d6c41:-549169509,2d9b49d769c98f10796cd3e251456f25:-445086087,d23a4487ba050f1053cad04a7e779d1f:1844860856,7f1a808766050f1007339097a0bebd71:-445086087</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-29 14:39:01</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_list_control">sys_ui_list_control</sys_db_object>
+        <sys_id>4f758d0a76674a64a4d927ad08716390</sys_id>
+        <sys_metadata>7595044bc3c10f1010d5160ed40131d9</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_2060759_base_m_0_bases</sys_name>
+        <sys_package display_value="Base Management" source="x_2060759_base_m_0">0167f002c38d071010d5160ed40131e9</sys_package>
+        <sys_parent display_value="Bases">1158b082c38d071010d5160ed4013173</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Base Management">0167f002c38d071010d5160ed40131e9</sys_scope>
+        <sys_scope_delete display_value="">4e83db0b1bc04d889b955198d98ee684</sys_scope_delete>
+        <sys_update_name>sys_ui_list_control_7595044bc3c10f1010d5160ed40131d9</sys_update_name>
+        <sys_update_version display_value="sys_ui_list_control_7595044bc3c10f1010d5160ed40131d9">3d23951bc30d8f1010d5160ed40131c2</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-29 14:39:01</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

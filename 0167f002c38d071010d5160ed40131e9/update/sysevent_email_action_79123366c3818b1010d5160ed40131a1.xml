@@ -74,7 +74,7 @@
 </tr>
 <tr style="border-top: 1px solid #dde3ed;">
 <td style="padding: 8px 0; color: #718096;">Rejected by</td>
-<td style="padding: 8px 0; color: #1a3a6b; font-weight: 600;">${base.manager.first_name +" "+ base.manager.last_name}</td>
+<td style="padding: 8px 0; color: #1a3a6b; font-weight: 600;">${base.manager.first_name} ${base.manager.last_name}</td>
 </tr>
 <tr style="border-top: 1px solid #dde3ed;">
 <td style="padding: 8px 0; color: #718096;">Status</td>
@@ -120,7 +120,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>79123366c3818b1010d5160ed40131a1</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>Registered in the base rejected</sys_name>
         <sys_overrides/>
         <sys_package display_value="Base Management" source="x_2060759_base_m_0">0167f002c38d071010d5160ed40131e9</sys_package>
@@ -128,7 +128,7 @@
         <sys_scope display_value="Base Management">0167f002c38d071010d5160ed40131e9</sys_scope>
         <sys_update_name>sysevent_email_action_79123366c3818b1010d5160ed40131a1</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-05-27 18:26:53</sys_updated_on>
+        <sys_updated_on>2026-05-29 16:15:23</sys_updated_on>
         <sys_version>2</sys_version>
         <template display_value="Unsubscribe and Preferences">7ed0481f3b0b2200c869c2c703efc487</template>
         <type>email</type>

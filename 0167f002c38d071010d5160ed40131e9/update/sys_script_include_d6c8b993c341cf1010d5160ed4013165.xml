@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>false</active>
+        <api_name>x_2060759_base_m_0.RegistrationValidatorAjax</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>RegistrationValidatorAjax</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var RegistrationValidatorAjax = Class.create();
+RegistrationValidatorAjax.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+    initialize: function() {},
+
+    hasAvailableBases: function() {
+        var user = gs.getUserID();
+
+        var regCheck = new GlideRecord("x_2060759_base_m_0_registration");
+        regCheck.addEncodedQuery(
+            "opened_by=" + user +
+            "^baseISNOTEMPTY" +
+            "^state!=4"
+        );
+        regCheck.setLimit(1);
+        regCheck.query();
+
+        if (regCheck.hasNext()) {
+            return "false";
+        }
+
+        var base = new GlideRecord("x_2060759_base_m_0_bases");
+        base.query();
+
+        while (base.next()) {
+            var maxCap = parseInt(base.getValue("maximum_capacity"), 10);
+            var occCap = parseInt(base.getValue("occupied_capacity"), 10) || 0;
+
+            if (!isNaN(maxCap) && maxCap > 0 && occCap < maxCap) {
+                return "true";
+            }
+        }
+
+        return "false";
+    },
+
+    type: "RegistrationValidatorAjax"
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-29 17:26:38</sys_created_on>
+        <sys_id>d6c8b993c341cf1010d5160ed4013165</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>RegistrationValidatorAjax</sys_name>
+        <sys_package display_value="Base Management" source="x_2060759_base_m_0">0167f002c38d071010d5160ed40131e9</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Base Management">0167f002c38d071010d5160ed40131e9</sys_scope>
+        <sys_update_name>sys_script_include_d6c8b993c341cf1010d5160ed4013165</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-29 18:43:13</sys_updated_on>
+    </sys_script_include>
+</record_update>
